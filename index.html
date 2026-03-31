@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kamilya Qyz Uzatu</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Marck+Script&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <audio id="bgMusic" loop>
+        <source src="assets/swim.mp3" type="audio/mpeg">
+    </audio>
+    <button id="musicToggle" class="btn btn-light">🎵 Play Music</button>
+
+    <div class="background-fixed"></div>
+
+    <main class="container">
+        <section class="vh-100 d-flex flex-column justify-content-center align-items-center text-white" data-aos="fade-up">
+            <img id="titleImg" src="assets/4.png"/>
+        </section>
+
+        <section class="info-block" data-aos="fade-right">
+            <img class='headingImg'  src='./assets/heading 1.png' />
+            <p>Аяулы қызым Камиляның қыз ұзату тойына шақырамын! Қызымның ақ жолын тілеп, қуанышыма ортақ болыңыздар.</p>
+            <p>Той иесі</p>
+            <p>Райгуль</p>
+        </section>
+
+        <section class="info-block" data-aos="fade-left">
+            <img class='headingImg'  src='./assets/heading 2.png' />
+            <p>4 шілде 2026 жылы, сағат 18:00 басталады</p>
+            <img src='./assets/calendar.png' width="400px" />
+        </section>
+
+        <section class="info-block" data-aos="fade-left">
+            <img class='headingImg'  src='./assets/heading 3.png' />
+            <p>Семей қаласы, Абай Құнанбаев көшесі, 75<br/> "Неке сарайы"</p>
+            <a class="dg-widget-link" href="http://2gis.kz/semey/firm/70000001051376029/center/80.24858236312868,50.40323861836318/zoom/16?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=bigMap">Посмотреть на карте Семея</a><div class="dg-widget-link"><a href="http://2gis.kz/semey/firm/70000001051376029/photos/70000001051376029/center/80.24858236312868,50.40323861836318/zoom/17?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=photos">Фотографии компании</a></div><div class="dg-widget-link"><a href="http://2gis.kz/semey/center/80.248575,50.40298/zoom/16/routeTab/rsType/bus/to/80.248575,50.40298╎Дворец бракосочетания?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=route">Найти проезд до Дворец бракосочетания</a></div><script charset="utf-8" src="https://widgets.2gis.com/js/DGWidgetLoader.js"></script><script charset="utf-8">new DGWidgetLoader({"width":500,"height":400,"borderColor":"#a3a3a3","pos":{"lat":50.40323861836318,"lon":80.24858236312868,"zoom":16},"opt":{"city":"semey"},"org":[{"id":"70000001051376029"}]});</script><noscript style="color:#c00;font-size:16px;font-weight:bold;">Виджет карты использует JavaScript. Включите его в настройках вашего браузера.</noscript>
+        </section>
+
+        <section class="info-block" data-aos="fade-left">
+            <img class='headingImg'  src='./assets/heading 4.png' />
+            <p>Жұбайыңызбен келетін болсаңыз, екеуіңіздің де есімдеріңізді жазуыңызды және тойға қатысуыңызды 10 сәуірге дейін растауыңызды сұраймыз!</p>
+            <form id='rsvp'>
+                <input type="text" id='rsvpName' name="entry.253765556" placeholder="Есіміңіз" required>
+                <fieldset class="rsvp-radio-group">
+                    <legend>Қатысуыңыз:</legend>
+                    <div >
+                      <input type="radio" id="i14" name='entry.247905857' value='Келемін'>
+                      <label for="i14">Келемін</label>
+                    </div>
+                    
+                    <div>
+                      <input type="radio" id="i17" name='entry.247905857' value='Жұбайыммен барамын'>
+                      <label for="i17">Жұбайыммен барамын</label>
+                    </div>
+                    
+                    <div>
+                      <input type="radio" id="i20" name='entry.247905857' value='Өкінішке орай, келе алмаймын'>
+                      <label for="i20">Өкінішке орай, келе алмаймын</label>
+                    </div>
+                </fieldset>
+                <div id='messageDiv'></div>
+                <button type="submit" id='submitBtn' class='button-4'>Жіберу</button>
+            </form>
+        </section>
+        <section class="info-block" data-aos="fade-right">
+            <h2>Келіңіздер тойымыздың қадірлі қонағы болыңыздар!</h2>
+        </section>
+    </main>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
