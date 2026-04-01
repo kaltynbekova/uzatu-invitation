@@ -3,24 +3,6 @@ body {
 }
 
 @font-face {
-  font-family: kzfont; /* set name */
-  src: url('assets/KZ Balmoral/kzbalmoral_regular.ttf'); /* url of the font */
-}
-
-@font-face {
-  font-family: alex; /* set name */
-  src: url('assets/Alex_Brush/AlexBrush-Regular.woff'); /* url of the font */
-}
-@font-face {
-  font-family: pinyon; /* set name */
-  src: url('assets/Alex_Brush/PinyonScript-Regular.ttf'); /* url of the font */
-}
-
-@font-face {
-  font-family: vivosanskz; /* set name */
-  src: url('assets/Vivo Sans/vivoSansGlobal-Regular.ttf'); /* url of the font */
-}
-@font-face {
   font-family: great_vibes; /* set name */
   src: url('assets/Great_Vibes/GreatVibes-Regular.woff'); /* url of the font */
 }
@@ -36,13 +18,26 @@ body {
     z-index: -1; /* Keeps it behind everything */
 }
 
+.title-block {
+    background: rgba(255, 255, 255, 0.9);
+    margin: 20px auto;
+    border-radius: 15px;
+    max-width: 600px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+/*    font-family: vivosanskz, serif;*/
+font-family: "Viaoda Libre", serif;
+font-weight: 600;
+    font-size: 20px;
+}
+
 .info-block h2 {
    font-family: great_vibes, cursive;
   font-weight: 400;
   font-style: normal;
   font-size: 36px;
 /*  color: rgb(61, 59, 58);*/
-color: rgb(230,196,201);
+color: rgb(190,139,146);
 }
 .info-block {
     background: rgba(255, 255, 255, 0.9);
@@ -56,6 +51,7 @@ color: rgb(230,196,201);
 font-family: "Viaoda Libre", serif;
 font-weight: 600;
     font-size: 20px;
+    color: rgb(101 97 94);
 }
 
 .headingImg{
@@ -75,7 +71,6 @@ input[type=text], select {
 
 .rsvp-radio-group {
   border: none; /* Removes the default border */
-  padding: 20px;
   margin: 10px 0;
   text-align: left;
 }
@@ -83,13 +78,14 @@ input[type=text], select {
 .rsvp-radio-group legend {
 font-family: "Viaoda Libre", serif;
 font-weight: 600;
-    font-size: 20px;
+font-size: 20px;
   margin-bottom: 10px;
-  color: #333;
+  color: rgb(101 97 94);
 }
 
 .rsvp-radio-group div {
   margin-bottom: 5px; /* Adds spacing between options */
+  font-size: 18px;
 }
 
 /* CSS */
@@ -100,7 +96,7 @@ font-weight: 600;
   border-radius: 6px;
   box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
   box-sizing: border-box;
-  color: #24292E;
+  color: rgb(190,139,146);
   cursor: pointer;
   display: inline-block;
   font-family: great_vibes, cursive;
@@ -158,7 +154,8 @@ font-weight: 600;
 }
 
 #titleImg {
-    max-width: 600px;
+/*    max-width: 600px;*/
+    max-width: 100%;
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.2);
 }
