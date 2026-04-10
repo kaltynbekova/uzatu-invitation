@@ -20,13 +20,13 @@ body {
 
 .title-block {
     background: rgba(255, 255, 255, 0.9);
-    margin: 20px auto;
+    margin: 30px auto;
     border-radius: 15px;
     max-width: 600px;
     text-align: center;
     box-shadow: 0 10px 30px rgba(0,0,0,0.2);
 /*    font-family: vivosanskz, serif;*/
-font-family: "Viaoda Libre", serif;
+font-family: "Forum", serif;
 font-weight: 600;
     font-size: 20px;
 }
@@ -48,7 +48,7 @@ color: rgb(190,139,146);
     text-align: center;
     box-shadow: 0 10px 30px rgba(0,0,0,0.2);
 /*    font-family: vivosanskz, serif;*/
-font-family: "Viaoda Libre", serif;
+font-family: "Forum", serif;
 font-weight: 600;
     font-size: 20px;
     color: rgb(101 97 94);
@@ -76,7 +76,7 @@ input[type=text], select {
 }
 
 .rsvp-radio-group legend {
-font-family: "Viaoda Libre", serif;
+font-family: "Forum", serif;
 font-weight: 600;
 font-size: 20px;
   margin-bottom: 10px;
