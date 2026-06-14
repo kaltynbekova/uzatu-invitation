@@ -146,12 +146,22 @@ font-size: 18px;
   display: none;
 }
 
-#musicToggle {
+/*#musicToggle {
     position: fixed;
     bottom: 20px;
     right: 20px;
     z-index: 1000;
-}
+}*/
+
+.controls-container {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+            display: flex;
+            gap: 10px;
+        }
+
 
 #titleImg {
 /*    max-width: 600px;*/

@@ -70,3 +70,30 @@ form.addEventListener('submit', async (e) => {
         submitBtn.textContent = 'Жіберу';
     }
 });
+
+let currentLang = 'kk';
+
+function switchLanguage() {
+    const toggleBtn = document.getElementById('langToggle');
+    const nameInput = document.getElementById('rsvpName');
+    
+    // Toggle active language state
+    currentLang = currentLang === 'kk' ? 'en' : 'kk';
+    
+    // 1. Update text content for elements with data attributes
+    const elements = document.querySelectorAll('[data-kk][data-en]');
+    elements.forEach(el => {
+        el.innerHTML = el.getAttribute(`data-${currentLang}`);
+    });
+
+    // 2. Handle unique attributes like placeholders
+    if (currentLang === 'en') {
+        nameInput.placeholder = "Your Name";
+        toggleBtn.innerHTML = "🇰🇿 KK";
+        document.documentElement.lang = 'en';
+    } else {
+        nameInput.placeholder = "Есіміңіз";
+        toggleBtn.innerHTML = "🇬🇧 EN";
+        document.documentElement.lang = 'kk';
+    }
+}

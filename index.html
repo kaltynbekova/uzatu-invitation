@@ -15,8 +15,10 @@
     <audio id="bgMusic" loop>
         <source src="assets/swim.mp3" type="audio/mpeg">
     </audio>
-    <button id="musicToggle" class="btn btn-light">🎵 Play Music</button>
-
+    <div class="controls-container">
+        <button id="musicToggle" class="btn btn-light">🎵 Play Music</button>
+        <button id="langToggle" class="btn btn-light" onclick="switchLanguage()">🇬🇧 EN</button>
+    </div>
     <div class="background-fixed"></div>
 
     <main class="container">
@@ -34,55 +36,58 @@
         </section>
 
         <section class="info-block" data-aos="fade-right">
-            <h2>Құрметті қонақтар!</h2>
-            <p>Аяулы қызым Камиляның қыз ұзату тойына шақырамын! Қызымның ақ жолын тілеп, қуанышыма ортақ болыңыздар.</p>
+            <h2 data-kk="Құрметті қонақтар!" data-en="Dear Guests!">Құрметті қонақтар!</h2>
+            <p data-kk="Аяулы қызым Камиляның қыз ұзату тойына шақырамын! Қызымның ақ жолын тілеп, қуанышыма ортақ болыңыздар."
+            data-en="I cordially invite you to the Qyz Uzatu (bride's farewell party) of my beloved daughter, Kamilya! Please join us to share our joy and wish her a blessed journey ahead.">Аяулы қызым Камиляның қыз ұзату тойына шақырамын! Қызымның ақ жолын тілеп, қуанышыма ортақ болыңыздар.</p>
             <div style="width: 100%"><img src='./assets/divide.png' width="60%" /></div>     
-            <p>Той иесі:</p>   
-            <h2>Райгуль</h2>              
+            <p data-kk="Той иесі:" data-en="Host:">Той иесі:</p>   
+            <h2 data-kk="Райгуль" data-en="Raigul">Райгуль</h2>              
             
         </section>
 
         <section class="info-block" data-aos="fade-left">
-            <h2>Той салтанатты</h2>
-            <p>4 шілде 2026 жылы, сағат 18:00 басталады</p>
+            <h2 data-kk="Той салтанатты" data-en="The Celebration">Той салтанатты</h2>
+            <p  data-kk="4 шілде 2026 жылы, сағат 18:00 басталады" data-en="starts at 18:00 on July 4, 2026">4 шілде 2026 жылы, сағат 18:00 басталады</p>
             <img src='./assets/calendar_pink.png' width="100%" />
         </section>
 
         <section class="info-block" data-aos="fade-left">
-            <h2>Мекен-жайымыз</h2>
-            <p>Семей қаласы, Абай Құнанбаев көшесі, 75<br/> "Неке сарайы"</p>
+            <h2 data-kk="Мекен-жайымыз" data-en="Our Address">Мекен-жайымыз</h2>
+            <p data-kk="Семей қаласы, Абай Құнанбаев көшесі, 75 'Неке сарайы'" 
+               data-en="Semey city, Abai Kunanbayev Street 75, 'Neke Sarayi' Wedding Palace">Семей қаласы, Абай Құнанбаев көшесі, 75<br/> "Неке сарайы"</p>
 <a class="dg-widget-link" href="http://2gis.kz/semey/firm/70000001051376029/center/80.24858236312868,50.40323861836318/zoom/16?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=bigMap">Посмотреть на карте Семея</a><div class="dg-widget-link"><a href="http://2gis.kz/semey/firm/70000001051376029/photos/70000001051376029/center/80.24858236312868,50.40323861836318/zoom/17?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=photos">Фотографии компании</a></div><div class="dg-widget-link"><a href="http://2gis.kz/semey/center/80.248575,50.40298/zoom/16/routeTab/rsType/bus/to/80.248575,50.40298╎Дворец бракосочетания?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=route">Найти проезд до Дворец бракосочетания</a></div><script charset="utf-8" src="https://widgets.2gis.com/js/DGWidgetLoader.js"></script><script charset="utf-8">new DGWidgetLoader({"width":"100%","height":"400px","borderColor":"#a3a3a3","pos":{"lat":50.40323861836318,"lon":80.24858236312868,"zoom":16},"opt":{"city":"semey"},"org":[{"id":"70000001051376029"}]});</script><noscript style="color:#c00;font-size:16px;font-weight:bold;">Виджет карты использует JavaScript. Включите его в настройках вашего браузера.</noscript>
             <!--a class="dg-widget-link" href="http://2gis.kz/semey/firm/70000001051376029/center/80.24858236312868,50.40323861836318/zoom/16?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=bigMap">Посмотреть на карте Семея</a><div class="dg-widget-link"><a href="http://2gis.kz/semey/firm/70000001051376029/photos/70000001051376029/center/80.24858236312868,50.40323861836318/zoom/17?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=photos">Фотографии компании</a></div><div class="dg-widget-link"><a href="http://2gis.kz/semey/center/80.248575,50.40298/zoom/16/routeTab/rsType/bus/to/80.248575,50.40298╎Дворец бракосочетания?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=route">Найти проезд до Дворец бракосочетания</a></div><script charset="utf-8" src="https://widgets.2gis.com/js/DGWidgetLoader.js"></script><script charset="utf-8">new DGWidgetLoader({"width":"100%","height":"400px","borderColor":"#a3a3a3","pos":{"lat":50.40323861836318,"lon":80.24858236312868,"zoom":16},"opt":{"city":"semey"},"org":[{"id":"70000001051376029"}]});</script><noscript style="color:#c00;font-size:16px;font-weight:bold;">Виджет карты использует JavaScript. Включите его в настройках вашего браузера.</noscript-->
         </section>
 
         <section class="info-block" data-aos="fade-left">
-            <h2>Тойға қатысуыңыз</h2>
-            <p>Жұбайыңызбен келетін болсаңыз, екеуіңіздің де есімдеріңізді жазуыңызды және тойға қатысуыңызды 31 мамырға дейін растауыңызды сұраймыз!</p>
+            <h2 data-kk="Тойға қатысуыңыз" data-en="RSVP">Тойға қатысуыңыз</h2>
+            <p data-kk="Жұбайыңызбен келетін болсаңыз, екеуіңіздің де есімдеріңізді жазуыңызды және тойға қатысуыңызды 21 маусымға дейін растауыңызды сұраймыз!" 
+               data-en="If you are coming with your spouse, please write both of your names and confirm your attendance by June 21st!">Жұбайыңызбен келетін болсаңыз, екеуіңіздің де есімдеріңізді жазуыңызды және тойға қатысуыңызды 31 мамырға дейін растауыңызды сұраймыз!</p>
             <form id='rsvp'>
                 <input type="text" id='rsvpName' name="entry.253765556" placeholder="Есіміңіз" required>
                 <fieldset class="rsvp-radio-group">
-                    <legend>Қатысуыңыз:</legend>
+                    <legend data-kk="Қатысуыңыз:" data-en="Your attendance:">Қатысуыңыз:</legend>
                     <div >
                       <input type="radio" id="i14" name='entry.247905857' value='Келемін'>
-                      <label for="i14">Келемін</label>
+                      <label for="i14" data-kk="Келемін" data-en="I will attend">Келемін</label>
                     </div>
                     
                     <div>
                       <input type="radio" id="i17" name='entry.247905857' value='Жұбайыммен барамын'>
-                      <label for="i17">Жұбайыммен барамын</label>
+                      <label for="i17" data-kk="Жұбайыммен барамын" data-en="Attending with spouse">Жұбайыммен барамын</label>
                     </div>
                     
                     <div>
                       <input type="radio" id="i20" name='entry.247905857' value='Өкінішке орай, келе алмаймын'>
-                      <label for="i20">Келе алмаймын</label>
+                      <label for="i20" data-kk="Келе алмаймын" data-en="Cannot attend">Келе алмаймын</label>
                     </div>
                 </fieldset>
                 <div id='messageDiv'></div>
-                <button type="submit" id='submitBtn' class='button-4'>Жіберу</button>
+                <button type="submit" id='submitBtn' class='button-4' data-kk="Жіберу" data-en="Submit">Жіберу</button>
             </form>
         </section>
         <section class="info-block" style='background-color: rgv(250, 249, 246);'data-aos="fade-right"> 
-            <h2>Келіңіздер тойымыздың қадірлі қонағы болыңыздар!</h2>
+            <h2 data-kk="Келіңіздер тойымыздың қадірлі қонағы болыңыздар!" data-en="Please come and be the honored guests of our celebration!">Келіңіздер тойымыздың қадірлі қонағы болыңыздар!</h2>
              <div style="width: 100%"><img src='./assets/divide.png' width="60%" /></div> 
         </section>
     </main>
