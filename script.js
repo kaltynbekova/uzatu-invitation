@@ -24,19 +24,37 @@ const submitBtn = document.getElementById('submitBtn');
 const messageDiv = document.getElementById('messageDiv')
 form.addEventListener('submit', async (e) => {
     e.preventDefault();
+    
+    currentLang = document.documentElement.lang;
 
     submitBtn.disabled = true;
-    submitBtn.textContent = 'Орындалуда...';
+    if(currentLang === 'en'){
+        submitBtn.textContent = 'In progress...';
+    }else{
+        submitBtn.textContent = 'Орындалуда...';
+
+    }
+    
 
     const name = document.getElementById('rsvpName').value.trim();
     const selectedRadio = document.querySelector('input[name="entry.247905857"]:checked');
 
     if (!selectedRadio) {
         messageDiv.className = 'error';
-        messageDiv.textContent = '❌ Жауапты таңдаңыз!';
+        if(currentLang === 'en'){
+            messageDiv.textContent = '❌ Please select an option!';
+        }else{
+            messageDiv.textContent = '❌ Жауапты таңдаңыз!';
+        }
+        
         messageDiv.style.display = 'block';
         submitBtn.disabled = false;
-        submitBtn.textContent = 'Жіберу';
+        if(currentLang === 'en'){
+            submitBtn.textContent = 'Send';
+        }else{
+            submitBtn.textContent = 'Жіберу';
+        }
+        
         return;
     }
 
@@ -46,7 +64,7 @@ form.addEventListener('submit', async (e) => {
     formData.append('entry.253765556', name);
     formData.append('entry.247905857', selectedRadio.value);
 
-    currentLang = currentLang === 'kk' ? 'en' : 'kk';
+    currentLang = document.documentElement.lang;
     try {
         await fetch(formURL, {
             method: 'POST',
@@ -78,7 +96,12 @@ form.addEventListener('submit', async (e) => {
         messageDiv.style.display = 'block';
     } finally {
         submitBtn.disabled = false;
-        submitBtn.textContent = 'Жіберу';
+
+        if(currentLang === 'en'){
+            submitBtn.textContent = 'Send';
+        }else{
+            submitBtn.textContent = 'Жіберу';
+        }
     }
 });
 
