@@ -46,6 +46,7 @@ form.addEventListener('submit', async (e) => {
     formData.append('entry.253765556', name);
     formData.append('entry.247905857', selectedRadio.value);
 
+    currentLang = currentLang === 'kk' ? 'en' : 'kk';
     try {
         await fetch(formURL, {
             method: 'POST',
@@ -55,7 +56,12 @@ form.addEventListener('submit', async (e) => {
 
         // Assume success (because we can't verify)
         messageDiv.className = 'success';
-        messageDiv.textContent = 'Жауабыңызға рахмет❤️';
+        if (currentLang === 'en') {
+            messageDiv.textContent = 'Thank you for your response❤️';
+        }else{
+            messageDiv.textContent = 'Жауабыңызға рахмет❤️';
+        }
+                
         messageDiv.style.display = 'block';
 
         form.reset();
@@ -63,7 +69,12 @@ form.addEventListener('submit', async (e) => {
     } catch (error) {
         // This will ONLY trigger on network failure
         messageDiv.className = 'error';
-        messageDiv.textContent = '❌ Қате болды, WhatsApp +7777 7287195 арқылы хабарласыңыз';
+        if (currentLang === 'en') {
+            messageDiv.textContent = '❌ Қате болды, WhatsApp +7777 7287195 арқылы хабарласыңыз';
+        }else{
+            messageDiv.textContent = '❌ There was an error, please contact us via WhatsApp +7777 7287195';
+
+        }
         messageDiv.style.display = 'block';
     } finally {
         submitBtn.disabled = false;
